@@ -70,6 +70,9 @@
   .tap-highlight-color {
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   }
+   .hover-text-color-1:hover {
+    color: var(--color-1);
+  }
 
   /* Rotate Utilities */
   .rotate-45  { @apply rotate-[45deg]; }
