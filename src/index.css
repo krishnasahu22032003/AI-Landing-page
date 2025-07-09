@@ -1,5 +1,8 @@
 @import "tailwindcss";
-/* Root Variables */
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300&display=swap");
+
 :root {
   --font-sora: "Sora", sans-serif;
   --font-code: "Source Code Pro", monospace;
@@ -7,7 +10,7 @@
   color-scheme: dark;
 }
 
-/* Global Smooth Scroll */
+
 * {
   scroll-behavior: smooth;
 }
@@ -64,9 +67,19 @@
     font-family: var(--font-sora), system-ui, sans-serif;
     @apply bg-[var(--n-8)] text-[var(--n-1)] text-base;
   }
+  
 }
 
 @layer utilities {
+    .font-sora {
+    font-family: var(--font-sora);
+  }
+  .font-code {
+    font-family: var(--font-code);
+  }
+  .font-grotesk {
+    font-family: var(--font-grotesk);
+  }
     .text-primary { color: var(--color-1); }
   .text-secondary { color: var(--color-2); }
   .text-accent { color: var(--color-3); }
@@ -115,7 +128,7 @@
 
   /* Spacing */
   .p-0_25 { padding: var(--spacing-0-25); }
-  .p-7_5 { padding: var(--spacing-7-5); }
+   .px-7_5 { padding-left: var(--spacing-7-5); padding-right: var(--spacing-7-5); }
   .p-15 { padding: var(--spacing-15); }
 
   .m-0_25 { margin: var(--spacing-0-25); }
@@ -150,6 +163,10 @@
    .hover-text-color-1:hover {
     color: var(--color-1);
   }
+  .text-n1-50 {
+  color: var(--n-1);
+  opacity: 0.5;
+}
 
   /* Rotate Utilities */
   .rotate-45  { @apply rotate-[45deg]; }
