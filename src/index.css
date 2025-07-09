@@ -71,6 +71,9 @@
 }
 
 @layer utilities {
+    .stroke-1 {
+    stroke: var(--stroke-1);
+  }
     .font-sora {
     font-family: var(--font-sora);
   }
