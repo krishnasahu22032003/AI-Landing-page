@@ -33,7 +33,7 @@
     --n-5: #3F3A52;
     --n-6: #252134;
     --n-7: #15131D;
-    --n-8: #121016;
+    --n-8: #0a0a1a;
     --n-9: #474060;
     --n-10: #43435C;
     --n-11: #1B1B2E;
@@ -60,7 +60,18 @@
     --border-default: 0.0625rem;
 
     --bg-radial: radial-gradient(var(--tw-gradient-stops));
-    --bg-conic: conic-gradient(from 225deg, #FFC876, #79FFF7, #9F53FF, #FF98E2, #FFC876);
+    --bg-conic: conic-gradient(
+  from 225deg,
+  #0a0f2c,
+  #1c124d,
+  #3a0ca3,
+  #4c1d95,
+  #5b21b6,
+  #312e81,
+  #0f172a,
+  #0a0f2c
+);
+
   }
 
   body {

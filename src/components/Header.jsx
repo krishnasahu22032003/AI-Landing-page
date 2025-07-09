@@ -33,7 +33,7 @@ const handleClick = () => {
 
 <div className="flex  items-center px-5 lg:px-7_5 xl:px-10 max-lg:py-4"  >
     <a href="#hero" className="block w-[12rem] xl:mr-8 " >
-    <img src="/images/logo.png"  className="w-[120px] h-[100px] "   alt="NeuroSpark" />
+    <img src="/images/logo.png"  className="w-[120px] h-[95px] "   alt="NeuroSpark" />
 </a>
 <nav onClick={handleClick} className={`${
             openNavigation ? "flex" : "hidden"
