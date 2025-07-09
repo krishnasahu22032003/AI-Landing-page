@@ -5,6 +5,8 @@ import { BackgroundCircles, BottomLine, Gradient } from "./design/Hero";
 import Button from "./Button";
 import Generating from "./Generating";
 import { ScrollParallax } from "react-just-parallax";
+import { heroIcons } from "../constants";
+import CompanyLogos from "./CompanyLogos";
 const Hero = () => {
     const parallaxRef = useRef(null);
   return (
