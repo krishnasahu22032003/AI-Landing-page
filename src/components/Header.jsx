@@ -25,7 +25,7 @@ const handleClick = () => {
   };
   return (
 <div
-  className={`fixed top-0 left-0 w-full z-50  border-b border-[color:var(--n-6)] lg:bg-[color:var(--n-8)] lg:backdrop-blur-sm ${
+  className={`fixed top-0 left-0 w-full z-50   border-[color:var(--n-6)] lg:bg-[color:var(--n-8)] lg:backdrop-blur-sm ${
     openNavigation ? "bg-[color:var(--n-8)]" : "bg-[color:var(--n-8)]/90 backdrop-blur-sm"
   }`}
 >
