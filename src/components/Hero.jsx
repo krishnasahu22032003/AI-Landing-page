@@ -116,7 +116,7 @@ const Hero = () => {
         <div className="relative max-w-[23rem] mx-auto md:max-w-5xl xl:mb-24 robot-img-wrapper" style={{ willChange: "transform, opacity", transform: "translateZ(0)" }}>
           <div className="relative z-1 p-0.5 rounded-2xl bg-conic">
             <div className="relative bg-n8 rounded-[1rem]">
-              <div className="h-[1.4rem] bg-n-10 rounded-t-[0.9rem]" />
+              <div className="h-[1.4rem] bg-n10 rounded-t-[0.9rem]" />
 
               <div className="aspect-[33/40] rounded-b-[0.9rem] overflow-hidden md:aspect-[688/490] lg:aspect-[1024/490]">
                 <img
@@ -135,7 +135,7 @@ const Hero = () => {
                 <Generating className="absolute left-4 right-4 bottom-5 md:left-1/2 md:right-auto md:bottom-8 md:w-[31rem] md:-translate-x-1/2" />
 
                 <ScrollParallax isAbsolutelyPositioned>
-                  <ul className="hidden absolute -left-[5.5rem] bottom-[7.5rem] px-1 py-1 bg-n-9/40 backdrop-blur border border-n1/10 rounded-2xl xl:flex">
+                  <ul className="hidden absolute -left-[5.5rem] bottom-[7.5rem] px-1 py-1 bg-n9/40 backdrop-blur border border-n1/10 rounded-2xl xl:flex">
                     {heroIcons.map((icon, index) => (
                       <li className="p-5" key={index}>
                         <img src={icon} width={24} height={25} alt={`icon-${index}`} />

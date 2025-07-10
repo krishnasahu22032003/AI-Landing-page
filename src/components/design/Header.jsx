@@ -6,7 +6,7 @@ export const Rings = () => (
       {[1, 0.7, 0.45].map((scale, i) => (
         <div
           key={i}
-          className="absolute inset-0 rounded-full border border-n-2/10"
+          className="absolute inset-0 rounded-full border border-n2/10"
           style={{ transform: `scale(${scale})` }}
         />
       ))}
@@ -16,8 +16,8 @@ export const Rings = () => (
 
 export const SideLines = () => (
   <>
-    <div className="absolute top-0 left-5 w-0.5 h-full bg-n-6/40" />
-    <div className="absolute top-0 right-5 w-0.5 h-full bg-n-6/40" />
+    <div className="absolute top-0 left-5 w-0.5 h-full bg-n6/40" />
+    <div className="absolute top-0 right-5 w-0.5 h-full bg-n6/40" />
   </>
 );
 
