@@ -219,35 +219,36 @@ export const NeurosparkServicesIcons = [
 export const pricing = [
   {
     id: "0",
-    title: "Basic",
-    description: "AI chatbot, personalized recommendations",
+    title: "Starter",
+    description: "Essential AI tools to explore Neurospark",
     price: "0",
     features: [
-      "An AI chatbot that can understand your queries",
-      "Personalized recommendations based on your preferences",
-      "Ability to explore the app and its features without any cost",
+      "Smart AI chatbot for basic queries",
+      "Personalized insights to match your goals",
+      "Free access to core features and experiments",
     ],
   },
   {
     id: "1",
-    title: "Premium",
-    description: "Advanced AI chatbot, priority support, analytics dashboard",
+    title: "Pro",
+    description: "Powerful AI tools with deeper control & insights",
     price: "9.99",
     features: [
-      "An advanced AI chatbot that can understand complex queries",
-      "An analytics dashboard to track your conversations",
-      "Priority support to solve issues quickly",
+      "Advanced AI chatbot for complex tasks",
+      "Integrated analytics dashboard for performance tracking",
+      "Priority support for faster resolutions",
     ],
   },
   {
     id: "2",
     title: "Enterprise",
-    description: "Custom AI chatbot, advanced analytics, dedicated account",
-    price: null,
+    description: "Tailored AI solutions for teams & creators at scale",
+    price: null, 
     features: [
-      "An AI chatbot that can understand your queries",
-      "Personalized recommendations based on your preferences",
-      "Ability to explore the app and its features without any cost",
+      "Custom AI models trained to your needs",
+      "Advanced usage analytics & reporting",
+      "Dedicated account manager & SLA support",
     ],
   },
 ];
+
