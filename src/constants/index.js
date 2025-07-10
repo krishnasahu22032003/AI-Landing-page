@@ -126,6 +126,8 @@ export const benefits = [
     imageUrl: benefitImage2,
   },
 ];
+export const collabText =
+  "With smart automation and top-notch security, it's the perfect solution for teams looking to work smarter.";
 export const collabApps = [
   {
     id: "0",
@@ -199,5 +201,4 @@ export const collabContent = [
     title: "Top-notch Security",
   },
 ];
-export const collabText =
-  "With smart automation and top-notch security, it's the perfect solution for teams looking to work smarter.";
+
