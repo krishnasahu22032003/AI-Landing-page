@@ -17,7 +17,8 @@
     "react-just-parallax": "^3.1.16",
     "react-router-dom": "^7.6.3",
     "scroll-lock": "^2.1.5",
-    "tailwindcss": "^4.1.11"
+    "tailwindcss": "^4.1.11",
+    "vanilla-tilt": "^1.8.1"
   },
   "devDependencies": {
     "@eslint/js": "^9.30.1",
