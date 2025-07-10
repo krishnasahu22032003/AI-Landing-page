@@ -203,3 +203,16 @@ export const collabContent = [
     title: "Enterprise-Grade Security",
   },
 ];
+export const NeurosparkServices = [
+  "Photo generating",
+  "Photo enhance",
+  "Seamless Integration",
+];
+
+export const NeurosparkServicesIcons = [
+  recording03,
+  recording01,
+  disc02,
+  chromecast,
+  sliders04,
+];
