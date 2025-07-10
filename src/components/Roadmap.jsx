@@ -1,3 +1,8 @@
+import { useEffect, useRef } from "react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
+
 import Button from "./Button";
 import Heading from "./Heading";
 import Section from "./Section";
@@ -7,6 +12,37 @@ import { check2, grid, loading1 } from "../assets";
 import { Gradient } from "./design/Roadmap";
 
 const Roadmap = () => {
+  const cardRefs = useRef([]);
+
+  useEffect(() => {
+    const ctx = gsap.context(() => {
+      cardRefs.current.forEach((el) => {
+        if (!el) return;
+
+        const title = el.querySelector(".gsap-title");
+        const text = el.querySelector(".gsap-text");
+        const image = el.querySelector(".gsap-image");
+
+        gsap.from([image, title, text], {
+          opacity: 0,
+          y: 50,
+          duration: 1.2,
+          delay: 0.2,
+          ease: "power3.out",
+          stagger: 0.2,
+          scrollTrigger: {
+            trigger: el,
+            start: "top 80%",
+            toggleActions: "play reset play reset", // re-animates on every scroll
+            once: false, // repeat on re-scroll
+          },
+        });
+      });
+    });
+
+    return () => ctx.revert();
+  }, []);
+
   return (
     <Section className="overflow-hidden" id="roadmap">
       <div className="container md:pb-10">
@@ -16,15 +52,16 @@ const Roadmap = () => {
         />
 
         <div className="relative grid gap-6 md:grid-cols-2 md:gap-4 md:pb-[7rem]">
-          {roadmap.map((item) => {
+          {roadmap.map((item, i) => {
             const status = item.status === "done" ? "Done" : "In progress";
 
             return (
               <div
+                key={item.id}
+                ref={(el) => (cardRefs.current[i] = el)}
                 className={`md:flex even:md:translate-y-[7rem] p-0.25 rounded-[2.5rem] ${
                   item.colorful ? "bg-conic-gradient" : "bg-n-6"
                 }`}
-                key={item.id}
               >
                 <div className="relative p-8 bg-n-8 border border-n6 rounded-[2.4375rem] overflow-hidden xl:p-15 flex flex-col">
                   {/* Grid background */}
@@ -60,14 +97,14 @@ const Roadmap = () => {
                       <img
                         src={item.imageUrl}
                         alt={item.title}
-                        className="max-w-[90%] h-auto rounded-2xl shadow-lg"
+                        className="max-w-[90%] h-auto rounded-2xl shadow-lg gsap-image"
                       />
                     </div>
 
-                    {/* Title + Description */}
+                    {/* Title + Text */}
                     <div className="text-center">
-                      <h4 className="h3 mb-4">{item.title}</h4>
-                      <p className="body-2 text-n-4">{item.text}</p>
+                      <h4 className="h3 mb-4 gsap-title">{item.title}</h4>
+                      <p className="body-2 text-n-4 gsap-text">{item.text}</p>
                     </div>
                   </div>
                 </div>
