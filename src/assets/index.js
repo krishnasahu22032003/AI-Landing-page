@@ -1,5 +1,5 @@
 import brainwave from "./brainwave.svg";
-import check from "./check.svg";
+import check from "./check.png";
 import brainwaveSymbol from "./brainwave-symbol.svg";
 import brainwaveWhiteSymbol from "./brainwave-symbol-white.svg";
 import play from "./play.svg";
