@@ -21,7 +21,7 @@ const Services = () => {
 
   useEffect(() => {
     const ctx = gsap.context(() => {
-      // Animate Text (slower delay)
+      // Animate Text (on every scroll)
       gsap.from(textRefs.current, {
         opacity: 0,
         y: 50,
@@ -32,6 +32,8 @@ const Services = () => {
         scrollTrigger: {
           trigger: sectionRef.current,
           start: "top 80%",
+          toggleActions: "play reverse play reverse",
+          once: false,
         },
       });
     }, sectionRef);
