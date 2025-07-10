@@ -17,8 +17,8 @@ const Heading = ({ className, title, text, tag }) => {
         scrollTrigger: {
           trigger: containerRef.current,
           start: "top 85%",
-          toggleActions: "play reverse play reverse", // replay on re-entry
-          once: false, // allow re-triggering
+          toggleActions: "play reverse play reverse", 
+          once: false, 
         },
       });
 

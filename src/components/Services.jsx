@@ -9,7 +9,6 @@ import { check } from "../assets";
 import { NeurosparkServices, NeurosparkServicesIcons } from "../constants";
 import Generating from "./Generating";
 import {
-  PhotoChatMessage,
   Gradient,
   VideoBar,
   VideoChatMessage,
@@ -21,7 +20,7 @@ const Services = () => {
 
   useEffect(() => {
     const ctx = gsap.context(() => {
-      // Animate Text (on every scroll)
+   
       gsap.from(textRefs.current, {
         opacity: 0,
         y: 50,

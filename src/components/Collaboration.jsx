@@ -15,7 +15,7 @@ const Collaboration = () => {
   const headingRef = useRef(null);
 
   useEffect(() => {
-    // Animate heading
+
     gsap.fromTo(
       headingRef.current,
       { opacity: 0, y: -40 },
@@ -32,7 +32,6 @@ const Collaboration = () => {
       }
     );
 
-    // Animate text with delay
     gsap.fromTo(
       textRef.current,
       { opacity: 0, y: 20 },
@@ -50,7 +49,6 @@ const Collaboration = () => {
       }
     );
 
-    // Animate icons
     iconRefs.current.forEach((el, index) => {
       gsap.fromTo(
         el,

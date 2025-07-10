@@ -33,8 +33,8 @@ const Roadmap = () => {
           scrollTrigger: {
             trigger: el,
             start: "top 80%",
-            toggleActions: "play reset play reset", // re-animates on every scroll
-            once: false, // repeat on re-scroll
+            toggleActions: "play reset play reset", 
+            once: false, 
           },
         });
       });
@@ -64,7 +64,7 @@ const Roadmap = () => {
                 }`}
               >
                 <div className="relative p-8 bg-n-8 border border-n6 rounded-[2.4375rem] overflow-hidden xl:p-15 flex flex-col">
-                  {/* Grid background */}
+
                   <div className="absolute top-0 left-0 max-w-full">
                     <img
                       className="w-full"
@@ -75,9 +75,9 @@ const Roadmap = () => {
                     />
                   </div>
 
-                  {/* Content */}
+         
                   <div className="relative z-1 flex flex-col flex-grow justify-between">
-                    {/* Top - Date and Status */}
+         
                     <div className="flex items-center justify-between max-w-[27rem] mb-8 md:mb-20">
                       <Tagline>{item.date}</Tagline>
                       <div className="flex items-center px-4 py-1 bg-n1 rounded text-n8">
@@ -92,7 +92,7 @@ const Roadmap = () => {
                       </div>
                     </div>
 
-                    {/* Image */}
+                  
                     <div className="mb-6 flex justify-center items-center">
                       <img
                         src={item.imageUrl}
@@ -101,7 +101,6 @@ const Roadmap = () => {
                       />
                     </div>
 
-                    {/* Title + Text */}
                     <div className="text-center">
                       <h4 className="h3 mb-4 gsap-title">{item.title}</h4>
                       <p className="body-2 text-n-4 gsap-text">{item.text}</p>

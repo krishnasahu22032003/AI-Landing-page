@@ -14,7 +14,7 @@ const Hero = () => {
   const heroRef = useRef(null);
 
   useLayoutEffect(() => {
-    // Preload robot image
+   
     const img = new Image();
     img.src = robot;
 
@@ -81,7 +81,7 @@ const Hero = () => {
       id="hero"
     >
       <div className="container relative" ref={heroRef}>
-        {/* Headline + CTA */}
+        
         <div className="relative z-1 max-w-[62rem] mx-auto text-center mb-[3.875rem] md:mb-20 lg:mb-[5.25rem]">
           <div className="relative">
             <h1 className="h1 mb-6 hero-title">
@@ -112,7 +112,7 @@ const Hero = () => {
           </div>
         </div>
 
-        {/* Robot Image Section */}
+     
         <div className="relative max-w-[23rem] mx-auto md:max-w-5xl xl:mb-24 robot-img-wrapper" style={{ willChange: "transform, opacity", transform: "translateZ(0)" }}>
           <div className="relative z-1 p-0.5 rounded-2xl bg-conic">
             <div className="relative bg-n8 rounded-[1rem]">

@@ -16,7 +16,7 @@ const Benefits = () => {
   const titleRef = useRef(null);
 
   useEffect(() => {
-    // Animate title on every scroll
+
     gsap.fromTo(
       titleRef.current,
       { opacity: 0, y: -40 },
@@ -33,11 +33,10 @@ const Benefits = () => {
       }
     );
 
-    // Animate each card on every scroll
+
     cardsRef.current.forEach((card, index) => {
       if (!card) return;
 
-      // Tilt effect
       VanillaTilt.init(card, {
         max: 8,
         speed: 400,
@@ -58,13 +57,13 @@ const Benefits = () => {
           scrollTrigger: {
             trigger: card,
             start: "top 85%",
-            toggleActions: "play reverse play reverse", // replay on scroll
+            toggleActions: "play reverse play reverse", 
           },
         }
       );
     });
 
-    // Cleanup
+  
     return () => {
       cardsRef.current.forEach((card) => card?.vanillaTilt?.destroy());
     };
