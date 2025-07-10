@@ -13,33 +13,29 @@ const Services = () => {
   return (
     <Section id="how-to-use">
       <div className="container">
-        <Heading
-          title="Generative AI made for creators."
-          text="Brainwave unlocks the potential of AI-powered applications"
-        />
+      <Heading
+  title="Neurospark: AI Built for Creators"
+  text="Unlock the power of intelligent tools designed to elevate your creative flow."
+/>
 
         <div className="relative">
-          <div className="relative z-1 flex items-center h-[39rem] mb-5 p-8 border border-n1/10 rounded-3xl overflow-hidden lg:p-20 xl:h-[46rem]">
+          <div className="relative z-1 flex items-center h-[39rem] mb-5 p-8 border border-n1/10 rounded-3xl overflow-hidden lg:p-7 xl:h-[38rem]">
             <div className="absolute top-0 left-0 w-full h-full pointer-events-none md:w-3/5 xl:w-auto">
-              <img
-                className="w-full h-full object-cover md:object-right"
-                width={800}
-                alt="Smartest AI"
-                height={730}
-                src={service1}
-              />
+            <video src="/videos/service-video.mp4" className="w-full  h-full object-cover md:object-right" autoPlay loop muted   playsInline
+    preload="auto"></video>
+         
             </div>
 
             <div className="relative z-1 max-w-[17rem] ml-auto">
-              <h4 className="h4 mb-4">Smartest AI</h4>
+             <h4 className="h4 mb-4">Smarter Than Ever</h4>
               <p className="body-2 mb-[3rem] text-n3">
-                Brainwave unlocks the potential of AI-powered applications
+                Neurospark unleashes the full power of AI-driven collaboration and creation.
               </p>
               <ul className="body-2">
                 {NeurosparkServices.map((item, index) => (
                   <li
                     key={index}
-                    className="flex items-start py-4 border-t border-n6"
+                    className="flex items-start py-4  border-n6"
                   >
                     <img width={24} height={24} src={check} />
                     <p className="ml-4">{item}</p>
@@ -48,7 +44,7 @@ const Services = () => {
               </ul>
             </div>
 
-            <Generating className="absolute left-4 right-4 bottom-4 border-n1/10 border lg:left-1/2 lg-right-auto lg:bottom-8 lg:-translate-x-1/2" />
+            <Generating className="absolute left-4 right-4 bottom-4 border-n1/10  lg:left-1/2 lg-right-auto lg:bottom-8 lg:-translate-x-1/2" />
           </div>
 
           <div className="relative z-1 grid gap-5 lg:grid-cols-2">
@@ -63,24 +59,23 @@ const Services = () => {
                 />
               </div>
 
-              <div className="absolute inset-0 flex flex-col justify-end p-8 bg-gradient-to-b from-n8/0 to-n8/90 lg:p-15">
-                <h4 className="h4 mb-4">Photo editing</h4>
-                <p className="body-2 mb-[3rem] text-n3">
-                  Automatically enhance your photos using our AI app&apos;s
-                  photo editing feature. Try it now!
-                </p>
-              </div>
+      <div className="absolute inset-0 flex flex-col justify-end p-8 bg-gradient-to-b from-n8/0 to-n8/90 lg:p-15">
+  <h4 className="h4 mb-4">AI Photo Enhancer</h4>
+  <p className="body-2 mb-[3rem] text-n3">
+    Instantly enhance your photos with intelligent adjustments powered by Neurospark AI.
+  </p>
+</div>
 
-              <PhotoChatMessage />
+
+       
             </div>
 
             <div className="p-4 bg-n7 rounded-3xl overflow-hidden lg:min-h-[46rem]">
               <div className="py-12 px-4 xl:px-8">
-                <h4 className="h4 mb-4">Video generation</h4>
-                <p className="body-2 mb-[2rem] text-n3">
-                  The world’s most powerful AI photo and video art generation
-                  engine. What will you create?
-                </p>
+               <h4 className="h4 mb-4">Generative Video AI</h4>
+<p className="body-2 mb-[2rem] text-n3">
+  Bring your stories to life with intelligent video creation built for the future.
+</p>
 
                 <ul className="flex items-center justify-between">
                   {NeurosparkServicesIcons.map((item, index) => (

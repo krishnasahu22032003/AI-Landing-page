@@ -204,9 +204,9 @@ export const collabContent = [
   },
 ];
 export const NeurosparkServices = [
-  "Photo generating",
-  "Photo enhance",
-  "Seamless Integration",
+  "AI Image Generation",
+  "Smart Photo Enhancement",
+  "Seamless App Integration",
 ];
 
 export const NeurosparkServicesIcons = [
