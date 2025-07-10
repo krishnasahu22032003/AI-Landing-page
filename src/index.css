@@ -82,6 +82,7 @@
 }
 
 @layer utilities {
+  
     .stroke-1 {
     stroke: var(--stroke-1);
   }
