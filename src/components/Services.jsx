@@ -1,6 +1,6 @@
 import Section from "./Section";
 import Heading from "./Heading";
-import { service1, service2, service3, check } from "../assets";
+import { check } from "../assets";
 import { NeurosparkServices,NeurosparkServicesIcons } from "../constants"
 import Generating from "./Generating";
 import {
@@ -51,7 +51,7 @@ const Services = () => {
             <div className="relative min-h-[39rem] border border-n1/10 rounded-3xl overflow-hidden">
               <div className="absolute inset-0">
                 <img
-                  src={service2}
+                  src="/images/service2.jpg"
                   className="h-full w-full object-cover"
                   width={630}
                   height={750}
@@ -103,7 +103,7 @@ const Services = () => {
 
               <div className="relative h-[20rem] bg-n8 rounded-xl overflow-hidden md:h-[25rem]">
                 <img
-                  src={service3}
+                  src='/images/service3.jpg'
                   className="w-full h-full object-cover"
                   width={520}
                   height={400}
