@@ -196,6 +196,7 @@ export const collabContent = [
   {
     id: "1",
     title: "AI-Powered Automation",
+    
   },
   {
     id: "2",
