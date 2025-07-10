@@ -251,4 +251,44 @@ export const pricing = [
     ],
   },
 ];
+export const roadmap = [
+  {
+    id: "0",
+    title: "Voice-to-AI Engine",
+    text: "Launch seamless voice interaction for creators, enabling real-time communication and content generation using speech.",
+    date: "May 2023",
+    status: "done",
+    imageUrl: roadmap1,
+    colorful: true,
+    color: "var(--color-4)", 
+  },
+  {
+    id: "1",
+    title: "Web3 Wallet Integration",
+    text: "Integrate decentralized wallets to enable secure login, content ownership, and AI model monetization through blockchain.",
+    date: "August 2023",
+    status: "progress",
+    imageUrl: roadmap2,
+    color: "var(--color-1)", 
+  },
+  {
+    id: "2",
+    title: "AI Workspace Customization",
+    text: "Allow users to personalize their AI dashboard—tune models, theme the UI, and configure workflows to match their creativity.",
+    date: "October 2023",
+    status: "done",
+    imageUrl: roadmap3,
+    color: "var(--color-6)", 
+  },
+  {
+    id: "3",
+    title: "Backend & DevOps Studio",
+    text: "Introduce a serverless backend builder with integrated CI/CD pipelines, real-time logs, and deployment powered by AI suggestions.",
+    date: "December 2023",
+    status: "progress",
+    imageUrl: roadmap4,
+    color: "var(--color-2)", 
+  },
+];
+
 
