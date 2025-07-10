@@ -127,7 +127,8 @@ export const benefits = [
   },
 ];
 export const collabText =
-  "With smart automation and top-notch security, it's the perfect solution for teams looking to work smarter.";
+  "Neurospark brings intelligent collaboration, automating workflows and securing your team’s productivity at every step.";
+
 export const collabApps = [
   {
     id: "0",
@@ -194,11 +195,10 @@ export const collabContent = [
   },
   {
     id: "1",
-    title: "Smart Automation",
+    title: "AI-Powered Automation",
   },
   {
     id: "2",
-    title: "Top-notch Security",
+    title: "Enterprise-Grade Security",
   },
 ];
-
