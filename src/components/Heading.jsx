@@ -3,7 +3,7 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
-import TagLine from "./Tagline";
+import TagLine from "./TagLine";
 
 const Heading = ({ className, title, text, tag }) => {
   const containerRef = useRef(null);
